@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Services Calculator</title>
+</head>
+<body>
+
+<section class="section is--services">
+    <div class="container">
+        <h1 class="title">Индивидуальный подбор и примерный расчет стоимости услуг</h1>
+        <div class="calculator">
+
+            <div class="item">
+                <label for="item-0">
+                    Тип страницы
+                </label>
+
+                <select class="select" name="calculator" id="item-0">
+                    <option data-price="0" value="0">Не выбран</option>
+                    <option data-price="30000" value="30000">Одностраничный сайт</option>
+                    <option data-price="30000" value="30000">Сайт визитка</option>
+                    <option data-price="50000" value="50000">Многостраничный сайт</option>
+                </select>
+            </div>
+
+            <div class="item hidden">
+                <label for="item-5">
+                    Количество страниц
+                </label>
+
+                <input type="number" name="calculator" id="item-5" value="0">
+            </div>
+            
+            <div class="item">
+                <label for="item-1">
+                    Разработка калькулятора услуг
+                </label>
+
+                <input data-price="100000" type="checkbox" name="calculator" id="item-1">
+            </div>
+
+            <div class="item">
+                <label for="item-2">
+                    Разработка формы обратной связи
+                </label>
+
+                <input data-price="5000" type="checkbox" name="calculator" id="item-2">
+            </div>
+
+
+            <div class="item">
+                <label for="item-3">
+                    Оптимизация сайта для мобильных устройств
+                </label>
+
+                <input data-price="5000" type="checkbox" name="calculator" id="item-3">
+            </div>
+
+            <div class="item">
+                <label for="item-4">
+                    SEO оптимизация
+                </label>
+
+                <input data-price="5000" type="checkbox" name="calculator" id="item-4">
+            </div>
+
+            <h2 class="total-price">
+                0
+            </h2>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
